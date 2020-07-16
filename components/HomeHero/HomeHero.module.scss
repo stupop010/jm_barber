@@ -1,0 +1,51 @@
+$primaryColor: #bb9d52;
+$linkColor: #757575;
+$primaryFamily: "Roboto", sans-serif;
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  height: 100%;
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: $primaryFamily;
+  line-height: 1.2;
+  h1 {
+    font-size: 7.5rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: capitalize;
+  }
+  p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  a {
+    margin-top: 8rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: $linkColor;
+    background: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    &:hover {
+      cursor: pointer;
+      color: $primaryColor;
+    }
+  }
+}

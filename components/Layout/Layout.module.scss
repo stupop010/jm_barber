@@ -1,0 +1,9 @@
+.layout {
+  display: grid;
+  grid-template-columns: 310px auto;
+}
+
+.section {
+  height: 100vh;
+  overflow-y: scroll;
+}
