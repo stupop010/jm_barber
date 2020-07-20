@@ -1,3 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import styles from "./Barbers.module.scss";
 
 export default function Barbers() {
@@ -11,8 +17,22 @@ export default function Barbers() {
       <div className={styles.barbers_wrapper}>
         {barbers.map((barber) => {
           return (
-            <div className={styles.card}>
-              <img src={barber.img} alt={barber.name} />
+            <div className={styles.card} key={barber.name}>
+              <div className={styles.img}>
+                <img src={barber.img} alt={barber.name} />
+                <div className={styles.img_overlay}>
+                  <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
+                  <FontAwesomeIcon
+                    icon={faTwitterSquare}
+                    className={styles.icon}
+                  />
+                  <FontAwesomeIcon
+                    icon={faInstagramSquare}
+                    className={styles.icon}
+                  />
+                  <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+                </div>
+              </div>
               <h2>{barber.name}</h2>
               <h4>{barber.title}</h4>
               <p>{barber.bio}</p>
