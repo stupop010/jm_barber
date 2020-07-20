@@ -1,0 +1,152 @@
+$primaryFamily: "Roboto", sans-serif;
+$primaryColor: #bb9d52;
+
+.testimonials {
+  width: 100%;
+  height: 710px;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("/testimonials.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 6rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: $primaryFamily;
+  text-transform: uppercase;
+  height: 200px;
+  small {
+    font-weight: 100;
+    font-size: 1.1rem;
+  }
+  h3 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  hr {
+    width: 150px;
+    box-shadow: 1px 1px black;
+  }
+}
+
+.carousel_container {
+  width: 100%;
+  height: 510px;
+
+  position: relative;
+}
+
+.carousel_wrapper {
+  width: 1200px;
+  height: 100%;
+  margin: 4rem auto;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel__slide {
+  width: 570px;
+  margin: 0 15px;
+}
+
+.button_prev,
+.button_next {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  top: 21%;
+  border-radius: 5px;
+  background-color: rgba($color: #252525, $alpha: 1);
+
+  &::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 2px $primaryColor;
+    border-radius: 10px;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button_prev {
+  left: -4px;
+}
+
+.button_next {
+  right: -4px;
+}
+
+.card {
+  width: inherit;
+  padding: 2rem;
+  height: 200px;
+  border-radius: 10px;
+  background: $primaryColor;
+  h4 {
+    display: flex;
+    align-items: stretch;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+  span {
+    margin-right: 15px;
+    font-size: 6rem;
+    color: black;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.testimonial_person {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.person {
+  margin: 1rem;
+  h5 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+}
+.avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    height: 70px;
+  }
+}

@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Menu from "../Menu";
 import styles from "./Layout.module.scss";
+import Testimonials from "../Testimonials/Testimonials";
 
 export default function Layout({ children }) {
   return (
@@ -16,7 +17,10 @@ export default function Layout({ children }) {
       </Head>
       <main className={styles.layout}>
         <Menu />
-        <div className={styles.section}>{children}</div>
+        <div className={styles.section}>
+          {children}
+          <Testimonials />
+        </div>
       </main>
       <footer></footer>
     </div>

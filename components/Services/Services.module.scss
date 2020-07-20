@@ -1,9 +1,12 @@
 $primaryFamily: "Roboto", sans-serif;
 
+.services {
+  padding-bottom: 4rem;
+}
+
 .title {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   margin-top: 3.5rem;
   line-height: 1.3;
@@ -26,21 +29,55 @@ $primaryFamily: "Roboto", sans-serif;
 }
 
 .card_container {
-  width: 1400px;
-  margin: auto;
+  width: 90%;
+  max-width: 1300px;
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 300px 2fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px;
   column-gap: 30px;
   row-gap: 30px;
+  margin: 3rem auto;
+  font-family: $primaryFamily;
 }
 .card {
   display: flex;
   width: 100%;
-  height: 100%;
+  max-width: 663px;
   background: black;
-  img {
-    height: 100px;
-    width: 100px;
+  color: white;
+
+  div {
+    width: 40%;
+    padding: 5rem 0.1rem;
+    text-align: center;
+    h4 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    ul {
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      margin-top: 1rem;
+      li {
+        margin-bottom: 0.3rem;
+      }
+    }
   }
+  img {
+    height: 100%;
+    width: 60%;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
 }

@@ -1,5 +1,3 @@
-$primaryColor: #bb9d52;
-$linkColor: #757575;
 $primaryFamily: "Roboto", sans-serif;
 
 .hero {
@@ -31,21 +29,8 @@ $primaryFamily: "Roboto", sans-serif;
   }
   p {
     margin-top: 3rem;
+    margin-bottom: 8rem;
     font-size: 2rem;
     font-weight: 300;
-  }
-  a {
-    margin-top: 8rem;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    color: $linkColor;
-    background: black;
-    border-radius: 10px;
-    transition: 0.3s;
-    &:hover {
-      cursor: pointer;
-      color: $primaryColor;
-    }
   }
 }
