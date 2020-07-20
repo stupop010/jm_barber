@@ -17,7 +17,7 @@ export default function Menu() {
           <Link href="/service">Our Services</Link>
         </li>
         <li>
-          <Link href="/">Our Barbers</Link>
+          <Link href="/barbers">Our Barbers</Link>
         </li>
         <li>
           <Link href="/">Appointment</Link>
