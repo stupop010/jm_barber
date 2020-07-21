@@ -1,4 +1,7 @@
+$primaryFamily: "Roboto", sans-serif;
+
 .title {
+  font-family: $primaryFamily;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,6 +10,7 @@
   small {
     font-weight: 300;
     font-size: 1.1rem;
+    text-transform: uppercase;
   }
   h2 {
     margin-top: 0.5rem;
