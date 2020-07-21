@@ -1,0 +1,25 @@
+.contact {
+  padding-bottom: 2rem;
+  background-color: rgba($color: #f8f8f8, $alpha: 1);
+}
+
+.contact_wrapper {
+  width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba($color: #f8f8f8, $alpha: 1);
+}
+
+.address {
+  ul {
+    margin: 1rem auto;
+    text-align: center;
+    li {
+      margin: 0.3rem;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

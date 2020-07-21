@@ -86,7 +86,7 @@ export default function ContactForm({ btnText }) {
         />
       </div>
       <button type="submit" className={styles.btn}>
-        Get Appointment
+        {btnText}
       </button>
     </form>
   );
