@@ -11,22 +11,34 @@ export default function Menu() {
       <img src="logo.png" alt="Logo" />
       <ul>
         <li className={router.pathname === "/" ? styles.active : null}>
-          <Link href="/">Home</Link>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
         <li className={router.pathname === "/service" ? styles.active : null}>
-          <Link href="/service">Our Services</Link>
+          <Link href="/service">
+            <a>Our Services</a>
+          </Link>
         </li>
         <li>
-          <Link href="/barbers">Our Barbers</Link>
+          <Link href="/barbers">
+            <a>Our Barbers</a>
+          </Link>
         </li>
         <li>
-          <Link href="/">Appointment</Link>
+          <Link href="/appointment">
+            <a>Appointment</a>
+          </Link>
         </li>
         <li>
-          <Link href="/">About Us</Link>
+          <Link href="/">
+            <a>About Us</a>
+          </Link>
         </li>
         <li>
-          <Link href="/">Contact</Link>
+          <Link href="/">
+            <a>Contact</a>
+          </Link>
         </li>
       </ul>
     </div>

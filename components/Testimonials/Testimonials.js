@@ -4,7 +4,7 @@ import styles from "./Testimonials.module.scss";
 const size = 600;
 
 export default function Testimonials() {
-  const [counter, setCounter] = useState(1);
+  const [counter, setCounter] = useState(0);
   const slideRef = useRef(null);
 
   useEffect(() => {

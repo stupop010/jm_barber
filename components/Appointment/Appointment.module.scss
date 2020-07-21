@@ -1,0 +1,44 @@
+$primaryFamily: "Roboto", sans-serif;
+$primaryColor: #bb9d52;
+
+.appointment_wrapper {
+  font-family: $primaryFamily;
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  margin: 2rem auto 3rem auto;
+  padding-bottom: 1rem;
+}
+
+.opening_times {
+  width: 50%;
+  height: 100%;
+  padding: 0 2rem;
+  h3 {
+    color: $primaryColor;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  ul {
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      color: white;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      border-bottom: 3px dotted black;
+      span {
+        position: relative;
+        top: 5px;
+        padding: 0.5rem;
+        background-color: #111111;
+      }
+    }
+  }
+}
+
+.form_wrapper {
+  width: 50%;
+}

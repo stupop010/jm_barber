@@ -4,16 +4,13 @@ import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+import SubPageTitle from "../SubPageTitle";
 import styles from "./Barbers.module.scss";
 
 export default function Barbers() {
   return (
     <section className={styles.barbers}>
-      <div className={styles.title}>
-        <small>MEET OUR BABRER TEAM</small>
-        <h2>our barbers</h2>
-        <hr />
-      </div>
+      <SubPageTitle small="MEET OUR BARBER TEAM" title="our barbers" />
       <div className={styles.barbers_wrapper}>
         {barbers.map((barber) => {
           return (
