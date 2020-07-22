@@ -5,6 +5,12 @@ $linkColor: #757575;
   height: 100vh;
   background: black;
   text-align: center;
+  z-index: 10;
+  @media screen and (max-width: 1580px) {
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+  }
 
   img {
     margin-top: 90px;
@@ -32,4 +38,24 @@ $linkColor: #757575;
   a {
     color: white;
   }
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 11;
+  @media screen and (min-width: 1580px) {
+    display: none;
+  }
+}
+
+.open {
+  transform: translateX(0);
+  width: 350px;
+}
+
+.icon {
+  height: 40px;
+  color: $primaryColor;
 }

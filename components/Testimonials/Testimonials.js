@@ -8,7 +8,7 @@ export default function Testimonials() {
   const slideRef = useRef(null);
 
   useEffect(() => {
-    slideRef.current.style.transform = `translateX(${-size * counter}px)`;
+    // slideRef.current.style.transform = `translateX(${-size * counter}px)`;
   }, [slideRef, counter]);
 
   function next() {

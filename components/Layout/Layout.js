@@ -1,8 +1,10 @@
 import Head from "next/head";
 
 import Menu from "../Menu";
-import styles from "./Layout.module.scss";
 import Testimonials from "../Testimonials/Testimonials";
+import Footer from "../Footer";
+
+import styles from "./Layout.module.scss";
 
 export default function Layout({ children }) {
   return (
@@ -20,9 +22,9 @@ export default function Layout({ children }) {
         <div className={styles.section}>
           {children}
           <Testimonials />
+          <Footer />
         </div>
       </main>
-      <footer></footer>
     </div>
   );
 }

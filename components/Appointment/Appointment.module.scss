@@ -8,6 +8,12 @@ $primaryColor: #bb9d52;
   height: 500px;
   margin: 2rem auto 3rem auto;
   padding-bottom: 1rem;
+
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
 }
 
 .opening_times {
@@ -37,8 +43,17 @@ $primaryColor: #bb9d52;
       }
     }
   }
+
+  @media screen and (max-width: 1250px) {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .form_wrapper {
   width: 50%;
+  padding-top: 2rem;
+  @media screen and (max-width: 1250px) {
+    width: 100%;
+  }
 }

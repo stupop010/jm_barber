@@ -1,6 +1,10 @@
 .layout {
   display: grid;
   grid-template-columns: 310px auto;
+
+  @media screen and (max-width: 1580px) {
+    display: block;
+  }
 }
 
 .section {
