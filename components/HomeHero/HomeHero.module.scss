@@ -21,11 +21,17 @@ $primaryFamily: "Roboto", sans-serif;
   h1 {
     font-size: 7.5rem;
     font-weight: 700;
+    @media screen and (max-width: 650px) {
+      font-size: 4rem;
+    }
   }
   h2 {
     font-size: 3rem;
     font-weight: 100;
     text-transform: capitalize;
+    @media screen and (max-width: 650px) {
+      font-size: 2rem;
+    }
   }
   p {
     margin-top: 3rem;
