@@ -3,10 +3,8 @@ import ContactForm from "../ContactForm";
 
 import styles from "./Contact.module.scss";
 
-const map =
-  "https://maps.googleapis.com/maps/api/staticmap?center=51.5136952,-0.1348066&zoom=18&size=400x400&key=AIzaSyAcklHGLaqLqlu5Va7gV7VWD82YbHmZpM0";
-
 export default function Contact() {
+  const map = `https://maps.googleapis.com/maps/api/staticmap?center=51.5136952,-0.1348066&zoom=18&size=400x400&key=${process.env.mapKey}`;
   return (
     <section className={styles.contact}>
       <SubPageTitle

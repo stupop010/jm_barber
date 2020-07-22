@@ -12,4 +12,7 @@ module.exports = {
 
     return config;
   },
+  env: {
+    mapKey: "AIzaSyAcklHGLaqLqlu5Va7gV7VWD82YbHmZpM0",
+  },
 };
