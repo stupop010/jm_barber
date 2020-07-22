@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
+import useWindowDimensions from "../hooks/useWindowDimensions";
 import styles from "./Menu.module.scss";
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+
+  const { width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (width > 1250) setOpen(false);
+  }, [width]);
 
   function toggle() {
     setOpen(!open);
