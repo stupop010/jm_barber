@@ -19,6 +19,7 @@ export default function Menu() {
   }, [width]);
 
   function toggle() {
+    if (width > 1250) return;
     setOpen(!open);
   }
 
