@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>J.M Barbers</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"

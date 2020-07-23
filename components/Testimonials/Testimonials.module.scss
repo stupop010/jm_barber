@@ -18,30 +18,6 @@ $primaryColor: #bb9d52;
   }
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: $primaryFamily;
-  text-transform: uppercase;
-  height: 200px;
-  small {
-    font-weight: 100;
-    font-size: 1.1rem;
-  }
-  h3 {
-    margin: 1rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  hr {
-    width: 150px;
-    box-shadow: 1px 1px black;
-  }
-}
-
 .carousel_container {
   width: 100%;
   height: 510px;
@@ -173,6 +149,10 @@ $primaryColor: #bb9d52;
     span {
       font-size: 4rem;
     }
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 160px;
   }
 }
 

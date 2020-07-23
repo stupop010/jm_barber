@@ -22,6 +22,11 @@ $primaryColor: #bb9d52;
     border: none;
     border-radius: 2px;
     box-shadow: 2px 2px rgba($color: #252525, $alpha: 1);
+    @media screen and (max-width: 650px) {
+      margin: 0.5rem 0;
+      width: 93%;
+      padding: 1rem 0.7rem;
+    }
   }
   select {
     width: 100%;
@@ -44,6 +49,12 @@ $primaryColor: #bb9d52;
     border-radius: 2px;
     border: none;
     box-shadow: 2px 2px rgba($color: #252525, $alpha: 1);
+    @media screen and (max-width: 650px) {
+      width: unset;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
   }
 }
 

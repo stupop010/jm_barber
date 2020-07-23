@@ -30,6 +30,9 @@ $primaryColor: #bb9d52;
     @media screen and (max-width: 650px) {
       font-size: 3.5rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 1.5em;
+    }
   }
 }
 

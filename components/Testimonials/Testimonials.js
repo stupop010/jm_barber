@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import SubPageTitle from "../SubPageTitle";
 import styles from "./Testimonials.module.scss";
 
 const size = 600;
@@ -23,11 +24,11 @@ export default function Testimonials() {
 
   return (
     <section className={styles.testimonials}>
-      <div className={styles.title}>
-        <small>let's see our testimonials</small>
-        <h3>happy testimonials</h3>
-        <hr />
-      </div>
+      <SubPageTitle
+        small="let's see our testimonials"
+        title="happy testimonials"
+        white
+      />
       <div className={styles.carousel_container}>
         <div className={styles.carousel_wrapper}>
           <div className={styles.carousel} ref={slideRef}>
