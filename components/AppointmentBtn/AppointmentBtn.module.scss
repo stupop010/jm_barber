@@ -1,6 +1,10 @@
 $primaryColor: #bb9d52;
 $linkColor: #757575;
 
+.btn_wrapper {
+  color: $linkColor;
+}
+
 .btn {
   position: relative;
   padding: 1rem 2rem;

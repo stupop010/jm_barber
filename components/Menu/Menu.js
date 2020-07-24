@@ -28,56 +28,56 @@ export default function Menu() {
       <div className={clsx(styles.menu, open && styles.open)}>
         <img src="logo.png" alt="Logo" />
         <ul>
-          <li
-            className={router.pathname === "/" ? styles.active : null}
-            onClick={toggle}
-          >
-            <Link href="/">
+          <Link href="/">
+            <li
+              className={router.pathname === "/" ? styles.active : null}
+              onClick={toggle}
+            >
               <a>Home</a>
-            </Link>
-          </li>
-          <li
-            className={router.pathname === "/service" ? styles.active : null}
-            onClick={toggle}
-          >
-            <Link href="/service">
+            </li>
+          </Link>
+          <Link href="/service">
+            <li
+              className={router.pathname === "/service" ? styles.active : null}
+              onClick={toggle}
+            >
               <a>Our Services</a>
-            </Link>
-          </li>
-          <li
-            className={router.pathname === "/barbers" ? styles.active : null}
-            onClick={toggle}
-          >
-            <Link href="/barbers">
+            </li>
+          </Link>
+          <Link href="/barbers">
+            <li
+              className={router.pathname === "/barbers" ? styles.active : null}
+              onClick={toggle}
+            >
               <a>Our Barbers</a>
-            </Link>
-          </li>
-          <li
-            className={
-              router.pathname === "/appointment" ? styles.active : null
-            }
-            onClick={toggle}
-          >
-            <Link href="/appointment">
+            </li>
+          </Link>
+          <Link href="/appointment">
+            <li
+              className={
+                router.pathname === "/appointment" ? styles.active : null
+              }
+              onClick={toggle}
+            >
               <a>Appointment</a>
-            </Link>
-          </li>
-          <li
-            className={router.pathname === "/about" ? styles.active : null}
-            onClick={toggle}
-          >
-            <Link href="/about">
+            </li>
+          </Link>
+          <Link href="/about">
+            <li
+              className={router.pathname === "/about" ? styles.active : null}
+              onClick={toggle}
+            >
               <a>About Us</a>
-            </Link>
-          </li>
-          <li
-            className={router.pathname === "/contact" ? styles.active : null}
-            onClick={toggle}
-          >
-            <Link href="/contact">
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li
+              className={router.pathname === "/contact" ? styles.active : null}
+              onClick={toggle}
+            >
               <a>Contact</a>
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
       </div>
       <div className={styles.hamburger} onClick={toggle}>
