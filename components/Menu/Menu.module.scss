@@ -50,6 +50,8 @@ $linkColor: #757575;
   top: 20px;
   left: 20px;
   z-index: 11;
+  cursor: pointer;
+
   @media screen and (min-width: 1580px) {
     display: none;
   }
