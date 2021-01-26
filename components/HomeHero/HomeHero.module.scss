@@ -21,11 +21,11 @@ $primaryFamily: "Roboto", sans-serif;
   h1 {
     font-size: 7.5rem;
     font-weight: 700;
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 1100px) {
       font-size: 4rem;
     }
-    @media screen and (max-width: 450px) {
-      font-size: 2em;
+    @media screen and (max-width: 600px) {
+      font-size: 2.5em;
     }
   }
   h2 {
@@ -44,9 +44,12 @@ $primaryFamily: "Roboto", sans-serif;
     margin-bottom: 8rem;
     font-size: 2rem;
     font-weight: 300;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 1100px) {
       font-size: 1.7em;
       text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 1em;
     }
   }
 }
